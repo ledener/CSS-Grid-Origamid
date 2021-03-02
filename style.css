@@ -1,121 +1,99 @@
 /*classes gerais*/
 .col-wide {
-  grid-column: 1/-1;
-}
+  grid-column: 1 / -1; }
 
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "Vollkorn", Georgia, serif;
-}
+  font-family: "Vollkorn", Georgia, serif; }
 
 body {
   background-color: white;
-  font-family: "Vollkorn", Georgia, serif;
-}
+  font-family: "Vollkorn", Georgia, serif; }
 
 img {
   width: 100%;
   display: block;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 /*GRID GERAL*/
 .structure {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 3fr 300px;
-  grid-template-areas: "header header header" "sidenav content ads" "footer footer footer";
-}
-.structure .header {
-  grid-area: header;
-  background: linear-gradient(135deg, #8844ee, #B07DFB);
-  padding: 30px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-}
-.structure .header .logo {
-  max-width: fit-content;
-}
-.structure .header .logo img {
-  width: 200px;
-}
-.structure .header nav ul {
-  display: flex;
-}
-.structure .header nav a {
-  display: block;
-  padding: 10px;
-  font-size: 18px;
-  color: white;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.structure .header nav a:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-.structure .header nav li:nth-child(2) {
-  margin: 0 30px;
-}
-.structure .sidenav {
-  grid-area: sidenav;
-  background: #fafbfc;
-  padding: 30px;
-}
-.structure .sidenav li a {
-  display: block;
-  min-width: 60px;
-  max-width: 100px;
-  margin: 0 auto 30px auto;
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
-  transition: 0.1s ease-out;
-}
-.structure .sidenav li a:hover {
-  background-color: #B07dfb;
-}
-.structure .content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  grid-area: content;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 30px;
-}
-.structure .content .wolf-one {
-  grid-row: span 2;
-  align-self: end;
-}
-.structure .content .wolf-two {
-  align-self: end;
-}
-.structure .content p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  letter-spacing: 0.005em;
-  color: rgba(0, 0, 0, 0.7);
-}
-.structure .ads {
-  grid-area: ads;
-  background: #fafbfc;
-  display: grid;
-  align-content: start;
-  padding: 30px;
-  gap: 30px;
-}
-.structure .footer {
-  grid-area: footer;
-  background: linear-gradient(135deg, #8844ee, #B07DFB);
-}
-.structure .footer p {
-  color: white;
-  text-align: center;
-  padding: 30px;
-}
+  grid-template-areas: "header header header" "sidenav content ads" "footer footer footer"; }
+  .structure .header {
+    grid-area: header;
+    background: linear-gradient(135deg, #8844ee, #B07DFB);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center; }
+    .structure .header .logo {
+      max-width: fit-content; }
+      .structure .header .logo img {
+        width: 200px; }
+    .structure .header nav ul {
+      display: flex; }
+    .structure .header nav a {
+      display: block;
+      padding: 10px;
+      font-size: 18px;
+      color: white;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 5px; }
+    .structure .header nav a:hover {
+      background: rgba(0, 0, 0, 0.5); }
+    .structure .header nav li:nth-child(2) {
+      margin: 0 30px; }
+  .structure .sidenav {
+    grid-area: sidenav;
+    background: #fafbfc;
+    padding: 30px; }
+    .structure .sidenav li a {
+      display: block;
+      min-width: 60px;
+      max-width: 100px;
+      margin: 0 auto 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+      transition: 0.1s ease-out; }
+    .structure .sidenav li a:hover {
+      background-color: #B07dfb; }
+  .structure .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px; }
+    .structure .content .wolf-one {
+      grid-row: span 2;
+      align-self: end; }
+    .structure .content .wolf-two {
+      align-self: end; }
+    .structure .content p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      letter-spacing: 0.005em;
+      color: rgba(0, 0, 0, 0.7); }
+  .structure .ads {
+    grid-area: ads;
+    background: #fafbfc;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    gap: 30px; }
+  .structure .footer {
+    grid-area: footer;
+    background: linear-gradient(135deg, #8844ee, #B07DFB); }
+    .structure .footer p {
+      color: white;
+      text-align: center;
+      padding: 30px; }
 
 /*# sourceMappingURL=style.css.map */
