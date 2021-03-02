@@ -87,6 +87,44 @@ img {
   margin: 0 auto;
   padding: 30px;
 }
+.structure .content .title {
+  color: #B07dfb;
+}
+.structure .content .title h1 {
+  font-size: 3.75em;
+  line-height: 1;
+  font-weight: 700;
+}
+.structure .content .title span {
+  font-size: 0.875em;
+  font-style: italic;
+}
+.structure .content .caracteristics {
+  display: flex;
+  align-items: flex-start;
+}
+.structure .content .caracteristics div {
+  width: 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #8844ee, #B07DFB);
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  border-radius: 5px;
+  position: relative;
+}
+.structure .content .caracteristics div .number {
+  font-size: 3em;
+  color: #B07DFB;
+}
+.structure .content .caracteristics div .label {
+  display: block;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  top: 2px;
+}
+.structure .content .caracteristics div:nth-child(2) {
+  margin-left: 30px;
+}
 .structure .content .wolf-one {
   grid-row: span 2;
   align-self: end;
@@ -99,6 +137,9 @@ img {
   line-height: 1.6;
   letter-spacing: 0.005em;
   color: rgba(0, 0, 0, 0.7);
+}
+.structure .content .info p:nth-child(2) {
+  margin-top: 30px;
 }
 .structure .ads {
   grid-area: ads;

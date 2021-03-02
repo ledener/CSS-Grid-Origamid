@@ -97,6 +97,45 @@ img {
         margin: 0 auto;
         padding: 30px;
 
+        .title {
+            color: #B07dfb;
+            h1 {
+                font-size: 3.75em;
+                line-height: 1;
+                font-weight: 700;
+            }
+            span {
+                font-size: 0.875em;
+                font-style: italic;
+            }
+        }
+        .caracteristics {
+            display: flex;
+            align-items: flex-start;
+            div {
+                width: 80px;
+                text-align: center;
+                background: linear-gradient(135deg, #8844ee, #B07DFB);
+                box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+                border-radius: 5px;
+                position: relative;
+             
+                .number {  
+                    font-size: 3em;
+                    color:#B07DFB;
+                }
+                .label {
+                    display: block;
+                    background-color: white;
+                    border-radius: 0 0 5px 5px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+                div:nth-child(2) {
+                    margin-left: 30px;
+                }
+        }
         .wolf-one {
             grid-row: span 2;
             align-self: end;
@@ -110,6 +149,10 @@ img {
             letter-spacing: 0.005em;
             color: rgba(0,0,0, .7);
         }
+        .info p:nth-child(2) {
+            margin-top: 30px;
+        }
+
     }
 
     .ads {
