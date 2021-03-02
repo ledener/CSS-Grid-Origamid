@@ -96,7 +96,20 @@ img {
         max-width: 900px;
         margin: 0 auto;
         padding: 30px;
-        
+
+        .wolf-one {
+            grid-row: span 2;
+            align-self: end;
+        }
+        .wolf-two {
+            align-self: end;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            letter-spacing: 0.005em;
+            color: rgba(0,0,0, .7);
+        }
     }
 
     .ads {

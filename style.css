@@ -87,6 +87,19 @@ img {
   margin: 0 auto;
   padding: 30px;
 }
+.structure .content .wolf-one {
+  grid-row: span 2;
+  align-self: end;
+}
+.structure .content .wolf-two {
+  align-self: end;
+}
+.structure .content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: 0.005em;
+  color: rgba(0, 0, 0, 0.7);
+}
 .structure .ads {
   grid-area: ads;
   background: #fafbfc;
