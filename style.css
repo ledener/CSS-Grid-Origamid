@@ -129,8 +129,46 @@ img {
   grid-row: span 2;
   align-self: end;
 }
+.structure .content .highlight {
+  font-size: 0.875em;
+  color: #B07DFB;
+  max-width: 16em;
+}
 .structure .content .wolf-two {
   align-self: end;
+}
+.structure .content .citation {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #8844ee, #B07DFB);
+}
+.structure .content .citation p {
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.structure .content .atributes {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #8844ee, #B07DFB);
+  align-self: start;
+}
+.structure .content .atributes li {
+  color: white;
+  font-family: Courier, monospace;
+  font-size: 1.125em;
+  padding: 15px;
+}
+.structure .content .atributes li {
+  border-bottom: solid 2px #B07DFB;
+}
+.structure .content .atributes li:nth-child(6) {
+  border-bottom: none;
 }
 .structure .content p {
   font-size: 1.2em;
@@ -157,6 +195,50 @@ img {
   color: white;
   text-align: center;
   padding: 30px;
+}
+
+@media (max-width: 1200px) {
+  .structure {
+    background: red;
+    grid-template-areas: "header header header" "sidenav content content" "sidenav ads ads" "footer footer footer";
+  }
+}
+@media (max-width: 768px) {
+  .structure {
+    background: green;
+    grid-template-columns: 100%;
+    grid-template-areas: "header " "sidenav" "content" "ads" "footer";
+  }
+  .structure .header {
+    grid-template-columns: auto;
+  }
+  .structure .header .logo {
+    margin-bottom: 30px;
+  }
+  .structure .header nav a {
+    font-size: 1em;
+  }
+  .structure .sidenav {
+    padding: 0 30px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .structure .sidenav ul {
+    display: flex;
+  }
+  .structure .sidenav ul li {
+    flex: 1 0 60px;
+  }
+  .structure .sidenav ul li a {
+    margin: 30px 30px 30px 0;
+  }
+}
+@media (max-width: 600px) {
+  .structure .content {
+    background: yellow;
+    grid-template-columns: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
