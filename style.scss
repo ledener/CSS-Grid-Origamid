@@ -201,6 +201,7 @@ img {
         align-content:start;
         padding: 30px;
         gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
     }
     .footer {
         grid-area: footer;
@@ -214,7 +215,6 @@ img {
 }
 @media (max-width:1200px){
     .structure {
-        background: red;
         grid-template-areas:
         "header header header"
         "sidenav content content"
@@ -225,7 +225,6 @@ img {
 }
 @media (max-width:768px){
     .structure {
-        background: green;
         grid-template-columns: 100%;
         grid-template-areas:
         "header "
@@ -262,7 +261,7 @@ img {
 }
 @media (max-width:600px){
     .structure .content {
-        background: yellow;
         grid-template-columns: auto;
+    
     }
 }
